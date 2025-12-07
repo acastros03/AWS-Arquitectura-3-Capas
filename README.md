@@ -49,9 +49,8 @@ Este documento describe el proceso paso a paso para desplegar una infraestructur
 3. **Web1 y Web2**: Lanzar las instancias de servidores web.
 4. **BD**: Lanzar la instancia de base de datos.
 
-[Accede a la infraestructura aquí](https://labs-iberotech.ddns.net/)
-
 
 ## Comprobación
 
+[Accede a la infraestructura aquí](https://labs-iberotech.ddns.net/)
 
