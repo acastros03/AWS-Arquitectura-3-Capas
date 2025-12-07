@@ -51,8 +51,4 @@ Este documento describe el proceso paso a paso para desplegar una infraestructur
 
 ## Comprobación
 
-Verificar que todas las instancias y configuraciones estén funcionando correctamente.
 
----
-
-Este es un resumen de los pasos esenciales para configurar la infraestructura en AWS. Asegúrate de seguir cada paso para garantizar la correcta implementación de la arquitectura.
