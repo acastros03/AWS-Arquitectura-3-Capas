@@ -122,5 +122,5 @@ Este documento describe el proceso paso a paso para desplegar una infraestructur
 
 ![Comprobación](Imagenes/Comprobacion.png)
 
-- [Acceder a la infraestructura](https://labs-iberotech.ddns.net/)
+- [Sitio Web](https://labs-iberotech.ddns.net/)
 
