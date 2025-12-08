@@ -11,11 +11,7 @@ Este documento describe el proceso paso a paso para desplegar una infraestructur
 5. [Crear Grupos de Seguridad](#-crear-grupos-de-seguridad)
 6. [Lanzar Instancias](#-lanzar-instancias)
 7. [Comprobación](#-comprobación)
-8. [Enlaces Relevantes](#-enlaces-relevantes)
-9. [About](#-about)
-10. [Recursos](#-recursos)
-11. [Releases](#-releases)
-12. [Packages](#-packages)
+
 
 ## 📋 Crear VPC
 
@@ -65,40 +61,5 @@ Este documento describe el proceso paso a paso para desplegar una infraestructur
 
 ## ✅ Comprobación
 
-Verificar que todas las instancias y configuraciones estén funcionando correctamente.
-
----
-
-## Enlaces Relevantes
-
 - **Accede a la infraestructura aquí**: [Acceder a la infraestructura](https://labs-iberotech.ddns.net/)
 
-## 📄 About
-
-**AWS — Arquitectura 3 Capas**
-
-## 🚀 Recursos
-
-- **Readme**: Este archivo
-- **Activity**: Seguimiento de la actividad
-- **Stars**: 0 estrellas
-- **Watchers**: 0 seguidores
-- **Forks**: 0 forks
-
-## 📦 Releases
-
-No se han publicado versiones aún.
-
-## 🏷️ Packages
-
-No hay paquetes publicados.
-
-## 🛠️ Crear un nuevo release
-
-Publica tu primer paquete
-
----
-
-© 2025 GitHub, Inc.  
-[Footer Navigation](#)  
-[Terms](#)
