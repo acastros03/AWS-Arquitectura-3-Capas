@@ -75,7 +75,13 @@ Este documento describe el proceso paso a paso para desplegar una infraestructur
 ## 🔐 Crear Grupos de Seguridad
 
 1. **VPC** → **Grupos de seguridad** → **Crear grupo de seguridad**
+   - **Balanceador**
 
+   - **Web**
+
+   - **NFS**
+
+   - **Base de Datos**
 ## 🚀 Lanzar Instancias
 
 1. **Balanceador**: Lanzar la instancia del balanceador de carga.
