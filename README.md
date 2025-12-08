@@ -118,6 +118,39 @@ Este documento describe el proceso paso a paso para desplegar una infraestructur
 
 ![Lanzar Instancias](Imagenes/Instancia-BD-2.png)
 
+## 7. Instrucciones de uso
+
+Para poder utilizar correctamente la infraestructura desplegada y acceder al CMS WordPress, sigue estos pasos:
+
+### 7.1 Encender las instancias en AWS
+
+1. Accede al servicio **EC2** en la consola de AWS.
+2. Verifica que las instancias del **Balanceador**, **Web1**, **Web2**, **NFS** y **MariaDB** estén en estado **running**.
+3. Si alguna está detenida, selecciónala y pulsa **Start Instance**.
+
+### 7.2 Comprobar conectividad interna
+
+1. Desde el balanceador, asegúrate de que puedes hacer **ping** a las IP privadas de los servidores web y al NFS.
+2. Comprueba también que los servidores web pueden conectarse a la base de datos **MariaDB**.
+
+### 7.3 Acceder al CMS WordPress
+
+1. Una vez que las instancias estén encendidas y funcionando, abre un navegador web.
+2. Introduce el **dominio configurado** o la **IP pública del balanceador**.
+3. Si configuraste **certificados SSL**, asegúrate de usar `https://`.
+
+### 7.4 Instalación inicial de WordPress
+
+1. Al acceder por primera vez, WordPress mostrará el asistente de instalación.
+2. Introduce los datos de conexión a la base de datos (nombre de la BD, usuario y contraseña creados en MariaDB).
+3. Configura el nombre del sitio, usuario administrador y contraseña.
+
+### 7.5 Acceso al panel de administración
+
+1. Una vez instalado, accede al **panel de administración** de WordPress en:
+   - Desde ahí podrás gestionar usuarios, instalar plugins y personalizar el sitio.
+
+
 ## ✅ Comprobación
 
 ![Comprobación](Imagenes/Comprobacion.png)
