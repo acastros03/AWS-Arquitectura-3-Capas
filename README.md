@@ -10,8 +10,8 @@ Este documento describe el proceso paso a paso para desplegar una infraestructur
 4. [Crear Tablas de Enrutamiento](#-crear-tablas-de-enrutamiento)
 5. [Crear Grupos de Seguridad](#-crear-grupos-de-seguridad)
 6. [Lanzar Instancias](#-lanzar-instancias)
-7. [Comprobación](#-comprobación)
-
+7. [Instrucciones de uso](#7-instrucciones-de-uso)
+8. [Comprobación](#-comprobación)
 
 ## 📋 Crear VPC
 
@@ -24,7 +24,6 @@ Este documento describe el proceso paso a paso para desplegar una infraestructur
 ![Crear VPC](Imagenes/Crear_VPC_2.png)
 
 ![Crear VPC](Imagenes/Crear_VPC_3.png)
-
 
 ## 🖧 Crear Subredes
 
@@ -46,7 +45,6 @@ Este documento describe el proceso paso a paso para desplegar una infraestructur
   
 ![Crear Subredes](Imagenes/Crear_Subredes_3.png)
 
-
 ## 🌐 Crear Internet Gateway
 
 1. **VPC** → **Puerta de enlace de internet** → **Crear Gateway de internet**
@@ -65,13 +63,11 @@ Este documento describe el proceso paso a paso para desplegar una infraestructur
 
 ![Crear Tablas de Enrutamiento](Imagenes/Crear_Tabla_Enrutamiento_2.png)
 
-
 2. **VPC** → **Crear Tablas de enrutamiento**
    - **Nombre**: `Tabla_enru_privada`
    - **VPC**: Selecciona la VPC creada en el paso anterior
   
 ![Crear Tablas de Enrutamiento](Imagenes/Crear_Tabla_Enrutamiento.png)
-
 
 ## 🔐 Crear Grupos de Seguridad
 
@@ -80,15 +76,15 @@ Este documento describe el proceso paso a paso para desplegar una infraestructur
 
 ![Crear Grupos de Seguridad](Imagenes/GS-Balanceador.png)
 
-   - **Web**
+2. **Web**
 
 ![Crear Grupos de Seguridad](Imagenes/GS-Web.png)
 
-   - **NFS**
+3. **NFS**
 
 ![Crear Grupos de Seguridad](Imagenes/GS-NFS.png)
 
-   - **Base de Datos**
+4. **Base de Datos**
 
 ![Crear Grupos de Seguridad](Imagenes/GS-BD.png)
 
@@ -150,10 +146,8 @@ Para poder utilizar correctamente la infraestructura desplegada y acceder al CMS
 1. Una vez instalado, accede al **panel de administración** de WordPress en:
    - Desde ahí podrás gestionar usuarios, instalar plugins y personalizar el sitio.
 
-
 ## ✅ Comprobación
 
 ![Comprobación](Imagenes/Comprobacion.png)
 
 - [Sitio Web](https://labs-iberotech.ddns.net/)
-
