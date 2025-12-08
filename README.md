@@ -1,15 +1,29 @@
-
-# Despliegue de Infraestructura en AWS
+# Despliegue de Infraestructura en AWS en 3 Capas
 
 Este documento describe el proceso paso a paso para desplegar una infraestructura en AWS, configurando una VPC con subredes públicas y privadas, así como las instancias necesarias para un sistema de balanceo de carga, web, NFS y base de datos.
 
-## Crear VPC
+## Índice
+
+1. [Crear VPC](#-crear-vpc)
+2. [Crear Subredes](#-crear-subredes)
+3. [Crear Internet Gateway](#-crear-internet-gateway)
+4. [Crear Tablas de Enrutamiento](#-crear-tablas-de-enrutamiento)
+5. [Crear Grupos de Seguridad](#-crear-grupos-de-seguridad)
+6. [Lanzar Instancias](#-lanzar-instancias)
+7. [Comprobación](#-comprobación)
+8. [Enlaces Relevantes](#-enlaces-relevantes)
+9. [About](#-about)
+10. [Recursos](#-recursos)
+11. [Releases](#-releases)
+12. [Packages](#-packages)
+
+## 📋 Crear VPC
 
 1. **Buscador AWS** → **VPC** → **Crear VPC**
    - **Nombre**: `Alexandro-VPC`
    - **CIDR IPv4**: `10.0.0.0/16`
 
-## Crear Subredes
+## 🖧 Crear Subredes
 
 1. **VPC** → **Subredes** → **Crear subred**
    - **Nombre**: `Publica`
@@ -23,12 +37,12 @@ Este documento describe el proceso paso a paso para desplegar una infraestructur
    - **Nombre**: `Privada BD`
    - **Subred CIDR IPv4**: `10.0.3.0/24`
 
-## Crear Internet Gateway
+## 🌐 Crear Internet Gateway
 
 1. **VPC** → **Puerta de enlace de internet** → **Crear Gateway de internet**
 2. **VPC** → **Internet Gateways** → **Crear Gateway NAT**
 
-## Crear Tablas de Enrutamiento
+## 🔄 Crear Tablas de Enrutamiento
 
 1. **VPC** → **Crear Tablas de enrutamiento**
    - **Nombre**: `Tabla_enru_publica`
@@ -38,19 +52,53 @@ Este documento describe el proceso paso a paso para desplegar una infraestructur
    - **Nombre**: `Tabla_enru_privada`
    - **VPC**: Selecciona la VPC creada en el paso anterior
 
-## Crear Grupos de Seguridad
+## 🔐 Crear Grupos de Seguridad
 
 1. **VPC** → **Grupos de seguridad** → **Crear grupo de seguridad**
 
-## Lanzar Instancias
+## 🚀 Lanzar Instancias
 
 1. **Balanceador**: Lanzar la instancia del balanceador de carga.
 2. **NFS**: Lanzar la instancia de NFS.
 3. **Web1 y Web2**: Lanzar las instancias de servidores web.
 4. **BD**: Lanzar la instancia de base de datos.
 
+## ✅ Comprobación
 
-## Comprobación
+Verificar que todas las instancias y configuraciones estén funcionando correctamente.
 
-[Accede a la infraestructura aquí](https://labs-iberotech.ddns.net/)
+---
 
+## Enlaces Relevantes
+
+- **Accede a la infraestructura aquí**: [Acceder a la infraestructura](https://labs-iberotech.ddns.net/)
+
+## 📄 About
+
+**AWS — Arquitectura 3 Capas**
+
+## 🚀 Recursos
+
+- **Readme**: Este archivo
+- **Activity**: Seguimiento de la actividad
+- **Stars**: 0 estrellas
+- **Watchers**: 0 seguidores
+- **Forks**: 0 forks
+
+## 📦 Releases
+
+No se han publicado versiones aún.
+
+## 🏷️ Packages
+
+No hay paquetes publicados.
+
+## 🛠️ Crear un nuevo release
+
+Publica tu primer paquete
+
+---
+
+© 2025 GitHub, Inc.  
+[Footer Navigation](#)  
+[Terms](#)
