@@ -50,9 +50,10 @@ Este documento describe el proceso paso a paso para desplegar una infraestructur
 ## 🌐 Crear Internet Gateway
 
 1. **VPC** → **Puerta de enlace de internet** → **Crear Gateway de internet**
-2. **VPC** → **Internet Gateways** → **Crear Gateway NAT**
 
 ![Crear Internet Gateway](Imagenes/Crear_Gateway.png)
+   
+2. **VPC** → **Internet Gateways** → **Crear Gateway NAT**
 
 ![Crear Internet Gateway](Imagenes/Crear_Gateway_2.png)
 
