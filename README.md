@@ -31,14 +31,21 @@ Este documento describe el proceso paso a paso para desplegar una infraestructur
 1. **VPC** → **Subredes** → **Crear subred**
    - **Nombre**: `Publica`
    - **Subred CIDR IPv4**: `10.0.1.0/24`
+  
+![Crear VPC](Imagenes/Crear_Subredes.png)
 
 2. **VPC** → **Subredes** → **Crear subred**
    - **Nombre**: `Privada Web y NFS`
    - **Subred CIDR IPv4**: `10.0.2.0/24`
 
+![Crear VPC](Imagenes/Crear_Subredes_2.png)
+
 3. **VPC** → **Subredes** → **Crear subred**
    - **Nombre**: `Privada BD`
    - **Subred CIDR IPv4**: `10.0.3.0/24`
+  
+![Crear VPC](Imagenes/Crear_Subredes_3.png)
+
 
 ## 🌐 Crear Internet Gateway
 
