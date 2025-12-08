@@ -159,6 +159,7 @@ A continuación se detallan los pasos necesarios para poner en marcha la infraes
 
 ### 7.5 Acceso al panel de administración
 Una vez completada la instalación, accede al panel de administración desde:
+
 http://tu-dominio-o-ip/wp-admin
 
 
