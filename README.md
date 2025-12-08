@@ -94,11 +94,32 @@ Este documento describe el proceso paso a paso para desplegar una infraestructur
 ## 🚀 Lanzar Instancias
 
 1. **Balanceador**: Lanzar la instancia del balanceador de carga.
+
+![Lanzar Instancias](Imagenes/Instancia-Balanceador.png)
+
+![Lanzar Instancias](Imagenes/Instancia-Balanceador_2.png)
+
 2. **NFS**: Lanzar la instancia de NFS.
+
+![Lanzar Instancias](Imagenes/Instancia-NFS.png)
+
+![Lanzar Instancias](Imagenes/Instancia-NFS_2.png)
+
 3. **Web1 y Web2**: Lanzar las instancias de servidores web.
+
+![Lanzar Instancias](Imagenes/Instancia-Web_1_y_2.png)
+
+![Lanzar Instancias](Imagenes/Instancia-Web_1_y_2-2.png)
+
 4. **BD**: Lanzar la instancia de base de datos.
 
+![Lanzar Instancias](Imagenes/Instancia-BD.png)
+
+![Lanzar Instancias](Imagenes/Instancia-BD-2.png)
+
 ## ✅ Comprobación
+
+![Comprobación](Imagenes/Comprobacion.png)
 
 - **Accede a la infraestructura aquí**: [Acceder a la infraestructura](https://labs-iberotech.ddns.net/)
 
