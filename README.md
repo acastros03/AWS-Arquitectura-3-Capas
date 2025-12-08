@@ -18,7 +18,12 @@ Este documento describe el proceso paso a paso para desplegar una infraestructur
 1. **Buscador AWS** → **VPC** → **Crear VPC**
    - **Nombre**: `Alexandro-VPC`
    - **CIDR IPv4**: `10.0.0.0/16`
+     
 ![Crear VPC](Imagenes/Crear_VPC.png)
+
+![Crear VPC](imagenes/Crear_VPC_2.png)
+
+![Crear VPC](imagenes/Crear_VPC_3.png)
 
 
 ## 🖧 Crear Subredes
