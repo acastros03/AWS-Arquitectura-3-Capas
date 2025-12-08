@@ -32,19 +32,19 @@ Este documento describe el proceso paso a paso para desplegar una infraestructur
    - **Nombre**: `Publica`
    - **Subred CIDR IPv4**: `10.0.1.0/24`
   
-![Crear VPC](Imagenes/Crear_Subredes.png)
+![Crear Subredes](Imagenes/Crear_Subredes.png)
 
 2. **VPC** → **Subredes** → **Crear subred**
    - **Nombre**: `Privada Web y NFS`
    - **Subred CIDR IPv4**: `10.0.2.0/24`
 
-![Crear VPC](Imagenes/Crear_Subredes_2.png)
+![Crear Subredes](Imagenes/Crear_Subredes_2.png)
 
 3. **VPC** → **Subredes** → **Crear subred**
    - **Nombre**: `Privada BD`
    - **Subred CIDR IPv4**: `10.0.3.0/24`
   
-![Crear VPC](Imagenes/Crear_Subredes_3.png)
+![Crear Subredes](Imagenes/Crear_Subredes_3.png)
 
 
 ## 🌐 Crear Internet Gateway
@@ -52,9 +52,9 @@ Este documento describe el proceso paso a paso para desplegar una infraestructur
 1. **VPC** → **Puerta de enlace de internet** → **Crear Gateway de internet**
 2. **VPC** → **Internet Gateways** → **Crear Gateway NAT**
 
-![Crear VPC](Imagenes/Crear_Gateway.png)
+![Crear Internet Gateway](Imagenes/Crear_Gateway.png)
 
-![Crear VPC](Imagenes/Crear_Gateway_2.png)
+![Crear Internet Gateway](Imagenes/Crear_Gateway_2.png)
 
 ## 🔄 Crear Tablas de Enrutamiento
 
@@ -62,14 +62,14 @@ Este documento describe el proceso paso a paso para desplegar una infraestructur
    - **Nombre**: `Tabla_enru_publica`
    - **VPC**: Selecciona la VPC creada en el paso anterior
 
-![Crear VPC](Imagenes/Crear_Tabla_Enrutamiento_2.png)
+![Crear Tablas de Enrutamiento](Imagenes/Crear_Tabla_Enrutamiento_2.png)
 
 
 2. **VPC** → **Crear Tablas de enrutamiento**
    - **Nombre**: `Tabla_enru_privada`
    - **VPC**: Selecciona la VPC creada en el paso anterior
   
-![Crear VPC](Imagenes/Crear_Tabla_Enrutamiento.png)
+![Crear Tablas de Enrutamiento](Imagenes/Crear_Tabla_Enrutamiento.png)
 
 
 ## 🔐 Crear Grupos de Seguridad
@@ -77,19 +77,19 @@ Este documento describe el proceso paso a paso para desplegar una infraestructur
 1. **VPC** → **Grupos de seguridad** → **Crear grupo de seguridad**
    - **Balanceador**
 
-![Crear VPC](Imagenes/GS-Balanceador.png)
+![Crear Grupos de Seguridad](Imagenes/GS-Balanceador.png)
 
    - **Web**
 
-![Crear VPC](Imagenes/GS-Web.png)
+![Crear Grupos de Seguridad](Imagenes/GS-Web.png)
 
    - **NFS**
 
-![Crear VPC](Imagenes/GS-NFS.png)
+![Crear Grupos de Seguridad](Imagenes/GS-NFS.png)
 
    - **Base de Datos**
 
-![Crear VPC](Imagenes/GS-BD.png)
+![Crear Grupos de Seguridad](Imagenes/GS-BD.png)
 
 ## 🚀 Lanzar Instancias
 
