@@ -116,35 +116,60 @@ Este documento describe el proceso paso a paso para desplegar una infraestructur
 
 ## 7. Instrucciones de uso
 
-Para poder utilizar correctamente la infraestructura desplegada y acceder al CMS WordPress, sigue estos pasos:
+A continuación se detallan los pasos necesarios para poner en marcha la infraestructura y acceder correctamente al CMS WordPress.
+
+---
 
 ### 7.1 Encender las instancias en AWS
+1. Accede a la consola de AWS y entra en el servicio **EC2**.
+2. Comprueba que las instancias **Balanceador**, **Web1**, **Web2**, **NFS** y **MariaDB** están en estado **running**.
+3. Si alguna instancia está detenida, selecciónala y pulsa **Start Instance**.
 
-1. Accede al servicio **EC2** en la consola de AWS.
-2. Verifica que las instancias del **Balanceador**, **Web1**, **Web2**, **NFS** y **MariaDB** estén en estado **running**.
-3. Si alguna está detenida, selecciónala y pulsa **Start Instance**.
+---
 
-### 7.2 Comprobar conectividad interna
+### 7.2 Verificación de la conectividad interna
+1. Conéctate al **Balanceador** mediante SSH.
+2. Comprueba la conectividad interna haciendo `ping` a las IP privadas de:
+   - Web1  
+   - Web2  
+   - Servidor NFS
+3. Desde los servidores web, verifica que puedes conectarte al servidor **MariaDB** (por ejemplo, usando `mysql -h <IP-Privada> -u usuario -p`).
 
-1. Desde el balanceador, asegúrate de que puedes hacer **ping** a las IP privadas de los servidores web y al NFS.
-2. Comprueba también que los servidores web pueden conectarse a la base de datos **MariaDB**.
+---
 
 ### 7.3 Acceder al CMS WordPress
+1. Una vez todas las instancias estén funcionando, abre un navegador web.
+2. Introduce:
+   - El **dominio** configurado, o  
+   - La **IP pública del balanceador**.
+3. Si configuraste certificados SSL, accede mediante:  
+   **https://tudominio.com**
 
-1. Una vez que las instancias estén encendidas y funcionando, abre un navegador web.
-2. Introduce el **dominio configurado** o la **IP pública del balanceador**.
-3. Si configuraste **certificados SSL**, asegúrate de usar `https://`.
+---
 
 ### 7.4 Instalación inicial de WordPress
-
-1. Al acceder por primera vez, WordPress mostrará el asistente de instalación.
-2. Introduce los datos de conexión a la base de datos (nombre de la BD, usuario y contraseña creados en MariaDB).
+1. Al acceder por primera vez, WordPress mostrará el **asistente de instalación**.
+2. Introduce los datos solicitados:
+   - Nombre de la base de datos  
+   - Usuario y contraseña  
+   - Host de la base de datos (IP privada de MariaDB)
 3. Configura el nombre del sitio, usuario administrador y contraseña.
 
-### 7.5 Acceso al panel de administración
+---
 
-1. Una vez instalado, accede al **panel de administración** de WordPress en:
-   - Desde ahí podrás gestionar usuarios, instalar plugins y personalizar el sitio.
+### 7.5 Acceso al panel de administración
+Una vez completada la instalación, accede al panel de administración desde:
+
+http://tu-dominio-o-ip/wp-admin
+
+
+Desde ahí podrás:
+- Gestionar usuarios  
+- Instalar plugins  
+- Añadir temas  
+- Administrar el contenido del sitio
+
+
 
 ## ✅ Comprobación
 
